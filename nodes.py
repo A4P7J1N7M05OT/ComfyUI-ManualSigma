@@ -7,7 +7,7 @@ class ManualSigma:
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "sigmas": ("STRING", {"default": "1.0, 0.8, 0.6, 0.4, 0.2", "multiline": False}),
+                "sigmas": ("STRING", {"default": "1.0, 0.8, 0.6, 0.4, 0.2", "multiline": True}),
             },
         }
 

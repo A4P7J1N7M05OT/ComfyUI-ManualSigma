@@ -2,7 +2,7 @@ import torch
 from comfy.samplers import KSAMPLER
 from comfy.utils import common_upscale
 
-class CustomScheduler:
+class ManualSigma:
     @classmethod
     def INPUT_TYPES(cls):
         return {
@@ -26,9 +26,9 @@ class CustomScheduler:
 
 # Register the node
 NODE_CLASS_MAPPINGS = {
-    "CustomScheduler": CustomScheduler,
+    "ManualSigma": ManualSigma,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "CustomScheduler": "Custom Scheduler",
+    "ManualSigma": "Manual Sigma",
 }
